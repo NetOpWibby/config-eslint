@@ -14,6 +14,11 @@
     "typescript": "^3.7.5",
     "updates": "^9.3.3"
   },
+  "files": [
+    "dist/browser.js",
+    "dist/index.js",
+    "dist/esnext.js"
+  ],
   "homepage": "https://code.webb.page/Webb/config-eslint",
   "husky": {
     "hooks": {
@@ -41,5 +46,5 @@
     "test:typescript": "tsc"
   },
   "types": "dist/index.d.ts",
-  "version": "2020.02.10"
+  "version": "2020.02.11"
 }
