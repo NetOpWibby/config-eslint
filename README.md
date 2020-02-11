@@ -18,11 +18,11 @@ $ npm i @webb/config-eslint eslint -D
 ```json
 {
   // Default configuration
-  extends: "@webb"
+  extends: "./node_modules/@webb/config-eslint"
   // When parsing ES2015+
-  extends: "@webb/config-eslint/esnext"
+  extends: "./node_modules/@webb/config-eslint/dist/esnext.js"
   // When parsing for the browser
-  extends: "@webb/config-eslint/browser"
+  extends: "./node_modules/@webb/config-eslint/dist/browser.js"
 }
 ```
 
@@ -31,15 +31,15 @@ $ npm i @webb/config-eslint eslint -D
 ```json
 {
   "eslintConfig": {
-    extends: "@webb"
+    extends: "./node_modules/@webb/config-eslint"
   }
 }
 ```
 
-### eslintrc
+### eslintrc.js
 
-```json
-{
-  extends: "@webb"
-}
+```js
+module.exports = exports = {
+  extends: "./node_modules/@webb/config-eslint"
+};
 ```
